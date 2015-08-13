@@ -29,21 +29,21 @@ public class ApplicationTest {
 
     @Test
     public void inverseWordWithSpaces() {
-        String word = "one  ";
-        String expectedWord = "eno  ";
+        String sentence = "one  ";
+        String expectedSentence = "eno  ";
 
-        String inversedWord = application.inverse(word);
+        String inversedSentence = application.inverse(sentence);
 
-        assertEquals(expectedWord, inversedWord);
+        assertEquals(expectedSentence, inversedSentence);
     }
 
     @Test
     public void inverseSerevalWords() {
-        String word = "one   two  three";
-        String expectedWord = "eno   owt  eerht";
+        String sentence = "one   two  three";
+        String expectedSentence = "eno   owt  eerht";
 
-        String inversedWord = application.inverse(word);
+        String inversedSentence = application.inverse(sentence);
 
-        assertEquals(expectedWord, inversedWord);
+        assertEquals(expectedSentence, inversedSentence);
     }
 }
